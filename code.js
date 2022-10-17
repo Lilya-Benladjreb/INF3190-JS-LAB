@@ -44,5 +44,15 @@ function changerCouleur() {
     var titre = document.getElementById("titre1");
     
     titre.style.color = "red";
+}
 
+function ajouterPara() {
+    var image = document.getElementById("image");
+
+    //creer un paragraphe
+    var para = document.createElement("p");
+    para.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+    //inserer le paragraphe apres l'element parent qui est le <center>
+    image.parentNode.appendChild(para);
 }
